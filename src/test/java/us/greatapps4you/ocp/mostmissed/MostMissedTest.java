@@ -29,7 +29,7 @@ class MostMissedTest {
 		switch (a) {
 		//A character literal can be used as a value for a case label.
 		case 'b':
-			System.out.println("the char is b");
+			//System.out.println("the char is b");
 			break;
 		default:
 			break;
@@ -68,11 +68,11 @@ class MostMissedTest {
 		switch (c) {
 		//the default label doest not have to be the last of all the labels.
 		default:
-			System.out.println("unknown char");
+//			System.out.println("unknown char");
 			break;
 
 		case 'b':
-			System.out.println("the char is b");
+//			System.out.println("the char is b");
 			break;
 		
 		}
