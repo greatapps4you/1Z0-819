@@ -1,7 +1,5 @@
 package us.greatapps4you.ocp.mostmissed;
 
-import java.security.AccessControlException;
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
