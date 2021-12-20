@@ -1,5 +1,8 @@
 package us.greatapps4you.ocp.mostmissed;
 
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Stream;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -8,6 +11,20 @@ import org.junit.jupiter.api.TestInstance.Lifecycle;
 @TestInstance(Lifecycle.PER_CLASS)
 class MostMissedTest {
 	
+	@Test
+	void testAtomicInteger() {
+		// What will the following code print?
+		AtomicInteger ai = new AtomicInteger();
+		Stream<String> stream = Stream.of("old", "king", "cole", "was", "a", "merry", "old", "soul").parallel();
+		stream.filter(e -> {
+			ai.incrementAndGet();
+			return e.contains("o");
+		}).allMatch(x -> x.indexOf("o") > 0);
+		String result = "AI = " + ai;	
+		System.out.println("AI = " + ai);
+		//Answer: Any number between 1 to 8
+	}
+
 	@Test
 	void testConversion() {
 		char ch = 'A';
