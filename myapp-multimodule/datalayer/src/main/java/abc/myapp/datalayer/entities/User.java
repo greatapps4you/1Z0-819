@@ -1,4 +1,4 @@
-package abc.myapp.datalayer;
+package abc.myapp.datalayer.entities;
 
 public class User {
 	private String name;

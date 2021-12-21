@@ -1,6 +1,6 @@
 package com.abc.myapp;
 
-import abc.myapp.datalayer.User;
+import abc.myapp.datalayer.entities.User;
 
 public class Main {
 
