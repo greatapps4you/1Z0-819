@@ -3,9 +3,18 @@ package us.greatapps4you.ocp.mostmissed.strings;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class StringsTest {
+class OCPStringsTest {
 	private static final String WHITESPACE_DATA = "     ";
 	private static final String NON_WHITESPACE_DATA = "NON WHITESPACE DATA";
+	
+	/**
+	 * What will the following code print?
+	 * Answer: 0.0 false
+	 */
+	@Test
+	void testPrint() {
+		OCPStrings.computeAndPrint();
+	}
 
 	/**
 	 * Which of the following expressions can be inserted in the above code so that
