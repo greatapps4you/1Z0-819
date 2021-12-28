@@ -40,7 +40,10 @@ public class Node<K, V> {
 
 	@Override
 	public String toString() {
-		return "hashCode: " + hashCode + " | key: " + key + " | " + "value: " + value + " | next: " + next;
+		return ("{\"hashCode\":" + hashCode + "," 
+	            + "\"key\":" + (key == null ? null : "\"" + key + "\"") + ","
+				+ "\"value\":" + (value == null ? null : "\"" + value + "\"") + "," 
+				+ "\"next\":" + next + "}");
 	}
 
 }
